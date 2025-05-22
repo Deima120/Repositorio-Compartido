@@ -351,8 +351,9 @@ header {
     .hero-content {
         padding: 1.5rem;
     }
+}
 
-  footer {
+footer {
  display: grid;
  grid-template-columns: repeat(3, 1fr);
 }
@@ -389,7 +390,4 @@ header {
 .footer-info {
   margin-top: 20px;
 }
-
-}
-
 
