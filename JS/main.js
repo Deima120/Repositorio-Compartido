@@ -1,3 +1,9 @@
+
+function toggleMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("show");
+}
+
 // Animación de paralaje suave para los elementos flotantes
 window.addEventListener('mousemove', (e) => {
     const floatingElements = document.querySelectorAll('.floating-phone');
@@ -35,3 +41,4 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.phone-card').forEach(card => {
     observer.observe(card);
 });
+
