@@ -1,47 +1,49 @@
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
+    --text-color: #fff;
+    --link-color: #ccc;
+    --link-hover-color: #3498db;
     --font-primary: 'Roboto', sans-serif;
     --transition-base: all 0.3s ease;
-}
+  }
 
-body {
+  body {
     font-family: var(--font-primary);
-}
-footer {
- display: grid;
- grid-template-columns: repeat(3, 1fr);
-}
-.footer {
-  background-color: #222;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
+  }
 
-.footer-container {
-  max-width: 1200px;
-  margin: auto;
-}
+  .footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 40px 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-.footer-links,
-.footer-social {
-  margin: 20px 0;
-}
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
 
-.footer-links a,
-.footer-social a {
-  color: #ccc;
-  margin: 0 10px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+  .footer-links,
+  .footer-social {
+    margin: 20px 0;
+  }
 
-.footer-links a:hover,
-.footer-social a:hover {
-  color: #fff;
-}
+  .footer-links a,
+  .footer-social a {
+    color: var(--link-color);
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color var(--transition-base);
+  }
 
-.footer-info {
-  margin-top: 20px;
-}
+  .footer-links a:hover,
+  .footer-social a:hover {
+    color: var(--link-hover-color);
+  }
+
+  .footer-info {
+    margin-top: 20px;
+  }
