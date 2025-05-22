@@ -69,7 +69,50 @@ header {
   .menu-toggle {
     display: block;
   }
+}
 
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.feature-card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Diseño adaptable para pantallas mayores (opcional) */
+@media (min-width: 600px) {
+  .features {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+  }
+
+  .feature-card {
+    width: 30%;
+  }
 }
 
 .hero {
@@ -307,5 +350,43 @@ header {
     .hero-content {
         padding: 1.5rem;
     }
-
 }
+
+  footer {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-links,
+.footer-social {
+  margin: 20px 0;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-info {
+  margin-top: 20px;
+}
+
