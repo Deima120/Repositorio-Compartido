@@ -8,3 +8,10 @@
 body {
     font-family: var(--font-primary);
 }
+
+.feature-card {
+ transition: transform 0.3s ease;
+}
+.feature-card:hover {
+ transform: translateY(-10px);
+}
